@@ -59,7 +59,7 @@ function generateSchedule(){
             .text(workHour);
         
         var newRowDescription = $('<td>')
-            .addClass("description past col-8 "  + colorRow);
+            .addClass("col-8 "  + colorRow);
         
         //Finding the time in the workScheduleArray and getting the value or description related to that time and then display.
         workDescription = workScheduleArray.find((desc) => desc.hour === workHour)
@@ -111,6 +111,7 @@ function saveToLocalStorage(workHour, workDescription){
     
 }
 
+// Function which will run in the start to check if localstorage is emoty or not.
 function saveEmptyToLocalStorage(){
     var storageWorkSchedule = JSON.parse(localStorage.getItem("localStorageWorkSchedule"));
     
