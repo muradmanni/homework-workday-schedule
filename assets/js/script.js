@@ -1,6 +1,6 @@
 var displayDateTime = $("#currentDay");
 var divTimeBlockContainer =$("#container");
-//var workSchedule= $("#schedule");
+var workSchedule= $("#schedule");
 var workHour="";
 var workDescription="";
 
